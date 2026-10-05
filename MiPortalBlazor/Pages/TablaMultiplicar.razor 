@@ -1,0 +1,45 @@
+@page "/tabla-multiplicar"
+
+<PageTitle>Tabla de Multiplicar</PageTitle>
+
+<div class="container my-4" style="max-width: 500px;">
+    <div class="card shadow">
+            <div class="card-header bg-success text-white text-center">
+                        <h3>Tabla de Multiplicar</h3>
+                                </div>
+                                        <div class="card-body">
+                                                    <div class="mb-3">
+                                                                    <label class="form-label fw-bold">Ingresa un número:</label>
+                                                                                    <input type="number" class="form-control" @bind="numero" @bind:event="oninput" placeholder="Ejemplo: 7" />
+                                                                                                </div>
+
+                                                                                                            @if (numero != 0)
+                                                                                                                        {
+                                                                                                                                            <h5 class="text-center my-3 text-secondary">Tabla del @numero</h5>
+                                                                                                                                                            <ul class="list-group">
+                                                                                                                                                                                @for (int i = 1; i <= 10; i++)
+                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                var factor = i;
+                                                                                                                                                                                                                                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                                                                                                                                                                                                                                                    <span>@numero × @factor</span>
+                                                                                                                                                                                                                                                                                                                <span class="badge bg-success rounded-pill font-monospace fs-6">@(numero * factor)</span>
+                                                                                                                                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                                    </ul>
+                                                                                                                        }
+                                                                                                                                    else
+                                                                                                                                                {
+                                                                                                                                                                    <div class="alert alert-secondary text-center m-0">
+                                                                                                                                                                                        Escribe un número arriba para generar la tabla.
+                                                                                                                                                                                                        </div>
+                                                                                                                                                }
+                                                                                                                                                        </div>
+                                                                                                                                                            </div>
+                                                                                                                                                            </div>
+
+                                                                                                                                                            @code {
+                                                                                                                                                                    private int numero;
+                                                                                                                                                            }
+                                                                                                                                                            
+                                                                                                                                                                                                    }
+                                                                                                                        }

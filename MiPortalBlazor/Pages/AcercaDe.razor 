@@ -1,0 +1,27 @@
+@page "/acerca-de"
+
+<PageTitle>Acerca De</PageTitle>
+
+<div class="container my-4" style="max-width: 450px;">
+    <div class="card shadow border-0 text-center">
+            <div class="card-header bg-dark text-white">
+                        <h3 class="m-0">Acerca del Desarrollador</h3>
+                                </div>
+                                        <div class="card-body">
+                                                    <img src="https://via.placeholder.com/150" class="rounded-circle mb-3 border border-3 border-primary" alt="Foto de Josué Ramírez Aquino" width="130" height="130">
+                                                                
+                                                                            <h4 class="card-title fw-bold">Josué Ramírez Aquino</h4>
+                                                                                        <p class="text-muted mb-4">Estudiante / Desarrollador</p>
+
+                                                                                                    <div class="d-grid gap-2">
+                                                                                                                    <a href="https://wa.me/18090000000" target="_blank" class="btn btn-success btn-lg">
+                                                                                                                                        Hablar por WhatsApp
+                                                                                                                                                        </a>
+                                                                                                                                                                        <a href="https://t.me/TuUsuario" target="_blank" class="btn btn-info text-white btn-lg">
+                                                                                                                                                                                            Hablar por Telegram
+                                                                                                                                                                                                            </a>
+                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                    
